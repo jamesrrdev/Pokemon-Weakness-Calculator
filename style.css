@@ -1,0 +1,35 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.weaknessBox{
+    border: 2px dotted black;
+    width: 750px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.effectiveBox{
+    display: inline-block;
+    text-align: center;
+    border: 2px dotted black;
+    width: 250px;
+    padding: 20px;
+}
+
+.effectiveText{
+    font-weight: bolder;
+}
+
+.weaknessText{
+    display: block;
+}
+
+#invalidMsg{
+    display: none;
+}

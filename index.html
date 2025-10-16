@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Weaknesses</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Pokemon Weakness Calculator</h1>
+
+    <div>
+        <input type="text" id="weakInput" name="weakInput" placeholder="Enter a type..."></input>
+        <button id="typeSubmitButton">submit</button>
+    </div>
+
+    <h2 id="invalidMsg">invalid type!</h2>
+
+    <div class="weaknessBox">
+
+        <h2>Attacking</h2>
+ 
+            <div class="effectiveBox" id="attackingEffective">
+                <a class="effectiveText">Effective</a>
+            </div>
+
+            <div class="effectiveBox" id="attackingIneffective">
+                <a class="effectiveText">Ineffective</a>
+            </div>
+
+            <div class="effectiveBox" id="attackingNoEffect">
+                <a class="effectiveText">No Effect</a>
+            </div>
+
+    </div>
+
+    <div class="weaknessBox">
+
+        <h2>Defending</h2>
+
+        <div class="effectiveBox" id="defendingEffective">
+            <a class="effectiveText">Strong Against</a>
+        </div>
+
+        <div class="effectiveBox" id="defendingIneffective">
+            <a class="effectiveText">Weak Against</a>
+        </div>
+
+        <div class="effectiveBox" id="defendingNoEffect">
+            <a class="effectiveText">No Effect</a>
+        </div>
+            
+    </div>
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
