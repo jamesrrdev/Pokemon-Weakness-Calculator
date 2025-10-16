@@ -8,7 +8,7 @@ const attackingNoEffect = document.getElementById("attackingNoEffect");
 const defendingEffective = document.getElementById("defendingEffective");
 const defendingIneffective = document.getElementById("defendingIneffective");
 const defendingNoEffect = document.getElementById("defendingNoEffect");
-const invalidMsg = document.getElementById("invalidMsg");
+const typeImg = document.getElementById("typeImg");
 
 let currentElements = [];
 
@@ -27,16 +27,18 @@ async function fetchData(type){
         }
 
         currentElements = [];
-        invalidMsg.style.display = "none";
 
         const response = await fetch(`https://pokeapi.co/api/v2/type/${type}`);
 
         if (!response.ok){
-            invalidMsg.style.display = "block";
+            window.alert("Invalid type!");
             throw new Error("Could not fetch type!");
         }
 
         const data = await response.json();
+
+        // Set view img
+        typeImg.src = data.sprites["generation-viii"]["brilliant-diamond-and-shining-pearl"].name_icon
 
         // Attacking Effective
         for(let type of data.damage_relations.double_damage_to){

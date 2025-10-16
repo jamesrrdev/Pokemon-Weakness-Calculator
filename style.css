@@ -12,7 +12,7 @@ body{
     border-radius: 5px;
     width: 750px;
     height: calc(100vh / 2.45);
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .effectiveBox{
@@ -42,4 +42,9 @@ body{
 
 #invalidMsg{
     display: none;
+}
+
+#typeImg{
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
