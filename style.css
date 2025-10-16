@@ -8,18 +8,28 @@ body{
 
 
 .weaknessBox{
-    border: 2px dotted black;
+    border: 2px solid black;
+    border-radius: 5px;
     width: 750px;
-    height: 300px;
-    margin-top: 50px;
+    height: calc(100vh / 2.45);
+    margin-top: 30px;
 }
 
 .effectiveBox{
+    background-color: hsl(240, 54%, 84%);
+    vertical-align: top;
     display: inline-block;
     text-align: center;
-    border: 2px dotted black;
+    border: 2px solid black;
+    border-radius: 5px;
     width: 250px;
+    height: calc(100vh / 6.5);
     padding: 20px;
+    margin-bottom: 4px;
+}
+
+.effectiveBox.noEffect{
+    height: calc(100vh / 16);
 }
 
 .effectiveText{
